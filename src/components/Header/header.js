@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 const ListLink = props => (
     <div>

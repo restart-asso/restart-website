@@ -9,22 +9,22 @@
 
 .logo {
   flex: 1;
-}
 
-.logo img {
-  width: 57px;
-  height: 57px;
-  margin: 0;
+  img {
+    width: 57px;
+    height: 57px;
+    margin: 0;
+  }
 }
 
 .menu {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-}
 
-.menu div {
-  padding: 10px;
+  div {
+    padding: 10px;
+  }  
 }
 
 .link {
