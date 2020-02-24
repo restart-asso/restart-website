@@ -1,42 +1,18 @@
 
 .navbar {
-  display: flex;
-  align-items: center;
   height: 60px;
-  background-color: #ffffff;
   margin: 10px 20px;
-  }
+}
 
 .logo {
-  flex: 1;
-
   img {
     width: 57px;
     height: 57px;
-    margin: 0;
   }
 }
 
 .menu {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-
-  div {
-    padding: 10px;
-  }  
-}
-
-.link {
-  text-shadow: none;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.23px;
-  color: #18a0fb;
+  align-items: center; 
 }
 
 link:hover, a:visited, a:link, a:active {
