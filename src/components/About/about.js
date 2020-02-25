@@ -35,7 +35,7 @@ const About = ({aboutTitle, aboutSubtitle, aboutText, teamMembers}) => (
                 </div>
                 <div className="column">
                     <div className="columns">
-                        {teamMembers.map( (member, index ) => {                    
+                        {teamMembers.map( (member, index ) => {                   
                             if (index !== (teamMembers.length-1)) {
                                 return (
                                     <div className="column is-half">
@@ -43,6 +43,7 @@ const About = ({aboutTitle, aboutSubtitle, aboutText, teamMembers}) => (
                                     </div>
                                 );
                             }
+                            return <span></span>;
                         })}
                     </div>
                     <div className="columns"> 
