@@ -6,13 +6,10 @@ const ProgramCard = ({ programTitle, programSlogan, programShortText, programIma
     <div className={styles.container}>
         <h1 className="title is-spaced is-3">{programTitle}</h1>
         <h2 className="subtitle is-5">{programSlogan}</h2>
-        <div style={{height: 170}}>
+        <div style={{height: 150}}>
             <p>{programShortText}</p>
         </div>
-
-        <div className="">
-            <img className="image" src={programImage} alt=""/>
-        </div>
+        <img className="image" src={programImage} alt=""/>
     </div>
 );
 
