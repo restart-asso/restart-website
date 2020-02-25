@@ -4,9 +4,9 @@ import styles from "./program-card.module.scss";
 
 const ProgramCard = ({ programTitle, programSlogan, programShortText, programImage }) => (
     <div className={styles.container}>
-        <h1>{programTitle}</h1>
-        <h2>{programSlogan}</h2>
-        <div style={{height: 220}}>
+        <h1 className="title is-spaced is-3">{programTitle}</h1>
+        <h2 className="subtitle is-5">{programSlogan}</h2>
+        <div style={{height: 170}}>
             <p>{programShortText}</p>
         </div>
 
