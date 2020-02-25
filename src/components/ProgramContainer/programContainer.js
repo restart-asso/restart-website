@@ -1,5 +1,5 @@
 import React from "react";
-import ProgramCard from "../Program Card/programCard"
+import ProgramCard from "../ProgramCard/programCard"
 // TODO move this as a data source
 const restartYouth = {
     programTitle: "Re:Start Youth",
