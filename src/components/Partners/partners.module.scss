@@ -1,0 +1,16 @@
+.wrapper {
+    margin-top: 50px;
+}
+
+.partner {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100px;
+    }
+}
+
+// TODO make this more clean
+.column-content {
+    padding: 0 30px;
+}
