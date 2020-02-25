@@ -1,0 +1,39 @@
+.wrapper {
+    margin-top: 50px;
+}
+
+.about-container {
+    h1 {
+        padding: 5px 0;
+    }
+}
+
+.column-content {
+    padding: 0 30px;
+    p {
+        text-align: justify;
+    }
+}
+
+.team-member {
+    img {
+        border-radius: 50%;
+        width: 80px;
+        object-fit: cover;
+        object-position: center center;
+        margin: 0;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+}
