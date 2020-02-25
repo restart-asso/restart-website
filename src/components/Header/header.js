@@ -15,7 +15,7 @@ export default () => (
                 <img src="/img/restart-logo.png" 
                      alt="Re:Start logo" width="57" height="57px"/>
             </Link>
-                
+            {/* change link tag by button tag */}
             <a  role="button" 
                 className="navbar-burger burger" 
                 aria-label="menu" aria-expanded="false" 
