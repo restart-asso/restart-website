@@ -8,7 +8,7 @@ import '../assets/styles.scss';
 
 const heroData = {
     slogan: "Dismantling Digital Divides",
-    missionStatement: "By providing inclusive digital educational & social support to newcomers in France",
+    missionStatement: "Providing inclusive digital educational & social support to newcomers in France",
     heroImage: "/img/hero.jpg"
 };
 

@@ -3,8 +3,8 @@ import ProgramCard from "../ProgramCard/programCard"
 // TODO move this as a data source
 const restartYouth = {
     programTitle: "Re:Start Youth",
-    programSlogan: "Workshops to foster digital skills to resettled youth in France.",
-    programShortText: "We create innovative educational environments to facilitate learning and take it as far as the learners want through their ideas and projects, involving the acquisition of technical and transversal habilities.  Participants learn about technology while being reflective on its usage and impact in society. ",
+    programSlogan: "Workshops to foster digital skills to resettled youth in France",
+    programShortText: "We create innovative educational environments to facilitate learning and take it as far as the learners want through their ideas and projects, involving the acquisition of technical and transversal abilities.  Participants learn about technology while being reflective on its usage and impact in society. ",
     programImage: "/img/restart-youth-300x300.jpg"
 
 };
