@@ -8,6 +8,9 @@ import About from "../components/About/about"
 import Partners from "../components/Partners/partners"
 import '../assets/styles/styles.scss';
 
+// TDODO make mobile and table friendly 
+// TODO make working mobile menu
+// TODO update favicon.ico
 const heroData = {
     slogan: "Dismantling Digital Divides",
     missionStatement: "Providing inclusive digital educational & social support to newcomers in France"
@@ -67,7 +70,7 @@ export const imgData = graphql`
 query {
     hero: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
-            fluid(maxWidth: 1240) {
+            fluid(maxWidth: 1240, quality: 80) {
             ...GatsbyImageSharpFluid
             }
         }
