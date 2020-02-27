@@ -13,7 +13,7 @@ const TeamMember = ({image, name, responsability}) => (
 );
 
 const About = ({aboutTitle, aboutSubtitle, aboutText, teamMembers}) => (
-    <div className={styles.wrapper}>
+    <div id="about" className={styles.wrapper}>
         <div className={`container ${styles.aboutContainer}`}>
             <div className="columns has-text-centered">
                 <div className="column">

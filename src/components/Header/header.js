@@ -49,7 +49,7 @@ export default () => {
         <div id="navbarMenu" className="navbar-menu">
             <div className={`navbar-end ${styles.menu}`}>
                 <ListLink to="/">Home</ListLink>
-                <ListLink to="#contact">Activities</ListLink>
+                <ListLink to="#programs">Programs</ListLink>
                 <ListLink to="#about">About</ListLink>
             </div>
         </div>
