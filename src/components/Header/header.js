@@ -12,7 +12,7 @@ const ListLink = props => (
 export default () => {
     const logoImgData = useStaticQuery(graphql`
         query {
-            logo: file(relativePath: { eq: "restart-logo.png" }) {
+            logo: file(relativePath: { eq: "restart-icon.jpg" }) {
                 childImageSharp {
                 fluid(maxWidth: 100, quality: 100) {
                     ...GatsbyImageSharpFluid

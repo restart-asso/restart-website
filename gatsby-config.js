@@ -19,6 +19,18 @@ module.exports = {
 				path: `${__dirname}/src/assets/img`
 			}
     },
+    {
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: 'Re:Start Website',
+				short_name: 'Re:Start',
+				start_url: '/',
+				background_color: '#18a0fb',
+				theme_color: '#18a0fb',
+				display: 'minimal-ui',
+				icon: 'src/assets/img/restart-icon.jpg'
+			}
+		},
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`, 
     `gatsby-transformer-sharp`

@@ -5,13 +5,14 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import restartLogo from '../../assets/img/restart-icon.jpg'
 import styles from "./footer.module.scss"
 
 export default () => (
     <footer> 
         <div className={styles.container}>
             <div className={styles.logoContainer}>
-                <img className={styles.logo} src="/img/restart-logo.png" alt="Re:Start logo"/>
+                <img className={styles.logo} src={restartLogo} alt="Re:Start logo"/>
             </div>
             <div className={styles.separator}></div>
             <div className={styles.infoContainer}>
