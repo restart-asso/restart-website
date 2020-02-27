@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "gatsby-image";
 import PropTypes from 'prop-types'
 import styles from "./program-card.module.scss";
 
@@ -9,7 +10,17 @@ const ProgramCard = ({ programTitle, programSlogan, programShortText, programIma
         <div style={{height: 150}}>
             <p>{programShortText}</p>
         </div>
-        <img className="image" src={programImage} alt=""/>
+        <Image 
+            fluid={programImage.childImageSharp.fluid}
+            style={{
+                objectFit: "cover",
+                objectPosition: "0 90",
+                height: 200,
+                width: "100%",
+                margin: 0
+            }}
+            alt=""
+        />
     </div>
 );
 
@@ -17,7 +28,7 @@ ProgramCard.propTypes = {
     programTitle: PropTypes.string.isRequired,
     programSlogan: PropTypes.string.isRequired,
     programShortText: PropTypes.string.isRequired,
-    programImage: PropTypes.string.isRequired,
+    programImage: PropTypes.objectOf(PropTypes.string).isRequired,
   }
 
 export default ProgramCard;

@@ -1,15 +1,16 @@
 import React from "react";
+import { graphql } from "gatsby"
+
 import Layout from "../components/Layout/layout";
 import ProgramContainer from "../components/ProgramContainer/programContainer"
 import Hero from "../components/Hero/hero"
 import About from "../components/About/about"
 import Partners from "../components/Partners/partners"
-import '../assets/styles.scss';
+import '../assets/styles/styles.scss';
 
 const heroData = {
     slogan: "Dismantling Digital Divides",
-    missionStatement: "Providing inclusive digital educational & social support to newcomers in France",
-    heroImage: "/img/hero.jpg"
+    missionStatement: "Providing inclusive digital educational & social support to newcomers in France"
 };
 
 const aboutData = {
@@ -50,13 +51,40 @@ const partnersData = [
     }
 ];
 
-export default () => (
+export default (props) => (
     <Layout>
-    <div >
-        <Hero {...heroData} /> 
-        <ProgramContainer />
-        <About {...aboutData} teamMembers={teamMembersData}/>
-        <Partners partnersTitle={partnersTitle} partners={partnersData}/>
-    </div>
+        <div >
+            <Hero {...heroData} heroImage={props.data}/> 
+            <ProgramContainer imgData={props.data}/>
+            <About {...aboutData} teamMembers={teamMembersData}/>
+            <Partners partnersTitle={partnersTitle} partners={partnersData}/>
+        </div>
     </Layout>
 );
+
+
+export const imgData = graphql`
+query {
+    hero: file(relativePath: { eq: "hero.jpg" }) {
+        childImageSharp {
+            fluid(maxWidth: 1240) {
+            ...GatsbyImageSharpFluid
+            }
+        }
+    }
+    restartYouth: file(relativePath: { eq: "restart-youth-300x300.jpg" }) {
+        childImageSharp {
+            fluid(maxWidth: 960, quality: 100) {
+                ...GatsbyImageSharpFluid
+            }
+        }
+    }
+    reHacks: file(relativePath: { eq: "re-hacks-960x642.jpg" }) {
+        childImageSharp {
+        fluid(maxWidth: 960, quality: 100) {
+            ...GatsbyImageSharpFluid
+            }
+        }
+    }
+}
+`
