@@ -34,7 +34,7 @@ const About = ({aboutTitle, aboutSubtitle, aboutText, teamMembers}) => (
                     </div>
                 </div>
                 <div className="column">
-                    <div className="columns">
+                    <div className="columns is-tablet">
                         {teamMembers.map( (member, index ) => {                   
                             if (index !== (teamMembers.length-1)) {
                                 return (

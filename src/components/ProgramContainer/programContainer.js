@@ -15,7 +15,7 @@ const reHacks = {
 };
 
 export default ({imgData}) => (
-    <div id="programs" className="container" style={{marginTop: 50}}>
+    <div id="programs" className="container" style={{marginTop: 30}}>
         <div className="tile is-ancestor">
             <div class="tile is-parent">
                 <div className="tile is-child">
