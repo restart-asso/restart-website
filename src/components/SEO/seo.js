@@ -44,7 +44,7 @@ function SEO({ description, lang, meta, title }) {
         // Open Graph metadata
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -76,7 +76,7 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.twitter,        },
         {
           name: `twitter:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
