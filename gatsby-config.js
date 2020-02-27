@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Re:Start | Digital Inclusion`,
+    description: `Providing inclusive digital educational & social support to newcomers in France`,
+    siteUrl: `https://www.restart-asso.org`,
+    imgUrl: `https://www.restart-asso.org/img/hero-social-media.jpg`,
+    twitter: `@reStartAsso`
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
@@ -30,9 +37,11 @@ module.exports = {
 				display: 'minimal-ui',
 				icon: 'src/assets/img/restart-icon.jpg'
 			}
-		},
+    },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`, 
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`
   ],
 }
