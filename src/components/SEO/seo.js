@@ -56,11 +56,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: site.imgUrl,
+          content: site.siteMetadata.imgUrl,
         },
         {
           property: `og:url`,
-          content: site.siteUrl, 
+          content: site.siteMetadata.siteUrl, 
         },
         {
           property: `og:site_name`,
@@ -73,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:site`,
-          content: site.twitter,        },
+          content: site.siteMetadata.twitter,        },
         {
           name: `twitter:title`,
           content: title,
@@ -84,7 +84,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: site.imgUrl, 
+          content: site.siteMetadata.imgUrl, 
         },
       ].concat(meta)}
     />
