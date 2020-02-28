@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
 import classNames from "classnames";
 import styles from "./header.module.scss";
 import logoImg from "../../assets/img/restart-icon.jpg"; 
 
 const ListLink = props => (
     <div>
-      <Link className={`navbar-item`} to={props.to}>{props.children}</Link>
+      <a className={`navbar-item`} href={props.to}>{props.children}</a>
     </div>
 );
 
@@ -30,6 +29,8 @@ class Header extends React.Component {
         const burgerClassName = classNames({
             'navbar-burger': true,
             'burger': true,
+            'button': true,
+            'is-white': true,
             'is-active': this.state.isOpen
         });
 
@@ -41,11 +42,11 @@ class Header extends React.Component {
         return (
             <nav className={`navbar ${styles.navbar}`} role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <Link className={styles.logo} to="/">
+                    <div className={styles.logo} href="">
                         <img src={logoImg} alt="Re:Start logo"/>
-                    </Link>
+                    </div>
 
-                    <a  role="button" 
+                    <button  
                         className={burgerClassName}
                         aria-label="menu" aria-expanded={this.state.isOpen} 
                         data-target="navbarMenu"
@@ -54,12 +55,12 @@ class Header extends React.Component {
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
-                    </a>
+                    </button>
                 </div>
                 
                 <div id="navbarMenu" className={navbarClassName}>
                     <div className={`navbar-end ${styles.menu}`}>
-                        <ListLink to="/">Home</ListLink>
+                        <ListLink to="#">Home</ListLink>
                         <ListLink to="#programs">Programs</ListLink>
                         <ListLink to="#about">About</ListLink>
                     </div>
