@@ -5,7 +5,7 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import restartLogo from '../../assets/img/restart-icon.jpg'
+import restartLogo from '../../assets/img/restart-icon.png'
 import styles from "./footer.module.scss"
 
 export default () => (

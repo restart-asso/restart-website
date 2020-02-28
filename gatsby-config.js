@@ -35,7 +35,7 @@ module.exports = {
 				background_color: '#18a0fb',
 				theme_color: '#18a0fb',
 				display: 'minimal-ui',
-				icon: 'src/assets/img/restart-icon.jpg'
+				icon: 'src/assets/img/restart-logo-favicon.jpg'
 			}
     },
     `gatsby-plugin-react-helmet`,
