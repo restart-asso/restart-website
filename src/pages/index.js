@@ -72,14 +72,14 @@ query {
             }
         }
     }
-    restartYouth: file(relativePath: { eq: "restart-youth-300x300.jpg" }) {
+    restartYouth: file(relativePath: { eq: "restart-youth.jpg" }) {
         childImageSharp {
             fluid(maxWidth: 960, quality: 100) {
                 ...GatsbyImageSharpFluid
             }
         }
     }
-    reHacks: file(relativePath: { eq: "re-hacks-960x642.jpg" }) {
+    reHacks: file(relativePath: { eq: "re-hacks.jpg" }) {
         childImageSharp {
         fluid(maxWidth: 960, quality: 100) {
             ...GatsbyImageSharpFluid

@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import styles from "./header.module.scss";
-import logoImg from "../../assets/img/restart-icon.jpg"; 
+import logoImg from "../../assets/img/restart-icon.png"; 
 
 const ListLink = props => (
     <div>
